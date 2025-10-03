@@ -131,33 +131,35 @@ The project uses several key libraries:
 
 <div align="center">
 
-### **Document Upload Screen (Step 5/6)**
-![Document Details Screen](screenshots/document-details.png)
-*Multi-step form showing document upload interface with various document types including Application, Medical Documents, Vehicle RC, and supporting documents*
+### **Complete Application Flow**
 
-### **Terms & Conditions Screen (Step 6/6)**
-![Terms & Conditions Screen](screenshots/terms-conditions.png)
-*Final step of the application process with terms acceptance and submission interface*
+| **Step 1: Form Type Selection** | **Step 2: Applicant Details** | **Step 3: Traveller Information** |
+|:---:|:---:|:---:|
+| ![Form Step 1](screenshots/FormStep1.jpg) | ![Form Step 2](screenshots/FormStep2.jpg) | ![Form Step 3](screenshots/FormStep3.jpg) |
+| *Choose travel pass type* | *Enter personal information* | *Add traveller details* |
 
-</div>
+| **Step 4: Journey Details** | **Step 5: Document Upload** | **Step 6: Terms & Conditions** |
+|:---:|:---:|:---:|
+| ![Form Step 4](screenshots/FormStep4.jpg) | ![Form Step 5](screenshots/FormStep5.jpg) | ![Form Step 6](screenshots/FormStep6.jpg) |
+| *Set travel dates and routes* | *Upload required documents* | *Accept terms and submit* |
 
-### **Application Flow Screenshots**
+### **Search & Tracking Features**
 
-<div align="center">
-
-| **Document Upload (Step 5/6)** | **Terms & Conditions (Step 6/6)** |
+| **Pass Search Interface** | **Pass Details View** |
 |:---:|:---:|
-| ![Document Details](screenshots/document-details.png) | ![Terms & Conditions](screenshots/terms-conditions.png) |
-| *Upload required documents for travel pass* | *Accept terms and submit application* |
+| ![Pass Search](screenshots/PassSearch.jpg) | ![Pass Details](screenshots/PassDetails.jpg) |
+| *Search existing applications* | *View detailed pass information* |
 
 </div>
 
 ### **Key Features Showcased**
 
-- **📄 Document Management**: Upload multiple document types (Application, Medical, Vehicle RC, Supporting documents)
+- **📋 Multi-Step Form**: Complete 6-step application process with progress indicators
+- **🎨 Color-Coded Categories**: Different themes for each pass type (Medical, Essential Goods, etc.)
+- **📄 Document Management**: Upload multiple document types with validation
+- **🔍 Search & Track**: Find and monitor existing applications
+- **📱 Material Design**: Clean, modern interface with intuitive navigation
 - **✅ Terms Acceptance**: Clear terms and conditions with checkbox acceptance
-- **📱 Step-by-Step Process**: Visual progress indicator (5/6, 6/6)
-- **🎨 Material Design**: Clean, modern interface with color-coded headers
 - **📤 Form Submission**: Final "SEND REQUEST" button to submit application
 
 </div>
