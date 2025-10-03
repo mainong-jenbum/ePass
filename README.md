@@ -245,9 +245,10 @@ This project is developed for educational and reference purposes. Please ensure 
 
 ---
 
+
 ## 👨‍💻 Developer
 
-**Developed by**: Mainong Jenbum  
+**Developed by**: [[Mainong Jenbum](https://jenbum.com)]  
 **Year**: 2020  
 **Purpose**: COVID-19 Travel Pass Management  
 **Location**: Changlang District, Arunachal Pradesh, India
@@ -283,5 +284,7 @@ For questions about this project or to discuss the implementation:
 **Made with ❤️ for the people of Changlang District, Arunachal Pradesh**
 
 *During the challenging times of COVID-19 pandemic*
+
+</div>
 
 </div>
