@@ -131,13 +131,34 @@ The project uses several key libraries:
 
 <div align="center">
 
-| Form Type Selection | Applicant Details | Search & Track |
-|:---:|:---:|:---:|
-| ![Form Selection](screenshots/form-selection.png) | ![Applicant Details](screenshots/applicant-details.png) | ![Search](screenshots/search.png) |
+### **Document Upload Screen (Step 5/6)**
+![Document Details Screen](screenshots/document-details.png)
+*Multi-step form showing document upload interface with various document types including Application, Medical Documents, Vehicle RC, and supporting documents*
 
-| Pass Details | QR Code | Document Upload |
-|:---:|:---:|:---:|
-| ![Pass Details](screenshots/pass-details.png) | ![QR Code](screenshots/qr-code.png) | ![Documents](screenshots/documents.png) |
+### **Terms & Conditions Screen (Step 6/6)**
+![Terms & Conditions Screen](screenshots/terms-conditions.png)
+*Final step of the application process with terms acceptance and submission interface*
+
+</div>
+
+### **Application Flow Screenshots**
+
+<div align="center">
+
+| **Document Upload (Step 5/6)** | **Terms & Conditions (Step 6/6)** |
+|:---:|:---:|
+| ![Document Details](screenshots/document-details.png) | ![Terms & Conditions](screenshots/terms-conditions.png) |
+| *Upload required documents for travel pass* | *Accept terms and submit application* |
+
+</div>
+
+### **Key Features Showcased**
+
+- **📄 Document Management**: Upload multiple document types (Application, Medical, Vehicle RC, Supporting documents)
+- **✅ Terms Acceptance**: Clear terms and conditions with checkbox acceptance
+- **📱 Step-by-Step Process**: Visual progress indicator (5/6, 6/6)
+- **🎨 Material Design**: Clean, modern interface with color-coded headers
+- **📤 Form Submission**: Final "SEND REQUEST" button to submit application
 
 </div>
 
