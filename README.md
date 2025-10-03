@@ -273,7 +273,7 @@ This project is developed for educational and reference purposes. Please ensure 
 For questions about this project or to discuss the implementation:
 
 - **Email**: [mainong.jenbum@gmail.com]
-- **GitHub**: [@mainong-jenbum]
+- **GitHub**: [[@mainong-jenbum](https://github.com/mainong-jenbum)]
 - **LinkedIn**: [[Mainong Jenbum](https://www.linkedin.com/in/mainongjenbum/)]
 
 ---
