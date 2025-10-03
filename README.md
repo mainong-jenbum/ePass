@@ -247,7 +247,7 @@ This project is developed for educational and reference purposes. Please ensure 
 
 ## 👨‍💻 Developer
 
-**Developed by**: [Your Name]  
+**Developed by**: Mainong Jenbum  
 **Year**: 2020  
 **Purpose**: COVID-19 Travel Pass Management  
 **Location**: Changlang District, Arunachal Pradesh, India
@@ -272,9 +272,9 @@ This project is developed for educational and reference purposes. Please ensure 
 
 For questions about this project or to discuss the implementation:
 
-- **Email**: [your.email@example.com]
-- **GitHub**: [@yourusername]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Email**: [mainong.jenbum@gmail.com]
+- **GitHub**: [@mainong-jenbum]
+- **LinkedIn**: [[Mainong Jenbum](https://www.linkedin.com/in/mainongjenbum/)]
 
 ---
 
