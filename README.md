@@ -286,5 +286,3 @@ For questions about this project or to discuss the implementation:
 *During the challenging times of COVID-19 pandemic*
 
 </div>
-
-</div>
