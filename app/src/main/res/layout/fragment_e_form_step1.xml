@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical"
+    android:background = "@android:color/white">
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width = "100dp"
+            android:layout_height = "64dp"
+            android:src="@drawable/arunachal_govt"/>
+        <RelativeLayout
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id = "@+id/tv_epass"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:text = "e-Pass"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@color/md_blue_grey_700" />
+
+            <TextView
+                android:id = "@+id/tv_by"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/tv_epass"
+                android:text = "by"
+                android:textColor = "@android:color/darker_gray"
+                android:textSize = "12sp" />
+
+            <TextView
+                android:id = "@+id/tv_bsa_admin"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/tv_epass"
+                android:layout_marginStart = "4dp"
+                android:layout_toEndOf = "@+id/tv_by"
+                android:textAllCaps="true"
+                android:text = "District Administration, Changlang"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                android:textColor = "@color/md_blue_grey_700"
+                android:textSize = "10sp" />
+
+            <TextView
+                android:id = "@+id/tv_issued"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@+id/tv_bsa_admin"
+                android:text = "Issued in public interest"
+                android:textColor = "@android:color/darker_gray"
+                android:textSize = "10sp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_search"
+            android:layout_width = "36dp"
+            android:layout_height = "36dp"
+            android:src="@drawable/ic_search"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_medical"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorMedical"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Medical" />
+
+                        <ImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_medical_van"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "72dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Medical Teams travelling to and from Arunachal Pradesh."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_essential_goods"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorEssentialGoods"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Essential Goods" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_essential_goods"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "100dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Vehicles transporting Essential Goods to and from Arunachal Pradesh."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_tea_arecanut"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorTeaArecanut"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Tea &amp; Arecanut" />
+
+                        <ImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_tea_arecanut"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "100dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Vehicles transporting Tea or Arecanut to and from Arunachal Pradesh."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_construction_material"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorConstructionMaterial"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Construction Material" />
+
+                        <ImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_buildings"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "100dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Vehicles transporting Construction Materials to and from Arunachal Pradesh."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_labour_student"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorLabourStudent"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Labour &amp; Student" />
+
+                        <ImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_people"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "100dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Labours &amp; Student travelling to and from Arunachal Pradesh."/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_intra_arunachal_pass"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorIntraArunachal"
+                app:cardElevation ="3dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:layout_width = "0dp"
+                            android:layout_weight="1"
+                            android:layout_height = "wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Intra Arunachal Pass" />
+
+                        <ImageView
+                            android:layout_width = "120dp"
+                            android:layout_height = "96dp"
+                            android:src="@drawable/ic_travel"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width = "100dp"
+                        android:layout_height = "2dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Citizens &amp; vehicles travelling inter-district(within Arunachal Pradesh)"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:orientation = "vertical" android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background="@color/colorActivityBackground">
+
+    <LinearLayout
+        android:id="@+id/ll_container_header"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:background="@android:color/holo_red_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id = "@+id/tv_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:text = "Search"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/white"
+                android:textStyle = "bold" />
+            <View
+                android:layout_width = "56dp"
+                android:layout_height = "2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id = "@+id/tv_description"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-condensed"
+                android:textSize="12sp"
+                android:text = "Search your permit request using the applicant's phone number."
+                android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                android:textColor = "@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width = "120dp"
+            android:layout_height = "96dp"
+            android:src="@drawable/ic_permit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id = "@+id/et_phone"
+            android:layout_width = "0dp"
+            android:layout_height = "45dp"
+            android:layout_marginEnd = "8dp"
+            android:layout_weight = "1"
+            android:background = "@drawable/bg_round_rect_white"
+            android:digits = "0123456789"
+            android:drawableStart = "@drawable/ic_search_2"
+            android:drawablePadding = "8dp"
+            android:drawableTint = "@android:color/darker_gray"
+            android:hint = "Enter applicant's phone number"
+            android:inputType = "phone"
+            android:maxLength = "10"
+            android:maxLines = "1"
+            android:paddingStart = "8dp"
+            android:paddingEnd = "8dp"
+            android:textSize = "14sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="Search"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_permit"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:visibility="visible"/>
+
+</LinearLayout>

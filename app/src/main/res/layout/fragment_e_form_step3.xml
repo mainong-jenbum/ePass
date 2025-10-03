@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical">
+    <LinearLayout
+        android:id="@+id/ll_container_header"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:background="@android:color/holo_red_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_weight="1"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id = "@+id/tv_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:text = "Traveller Details"
+                android:textAppearance = "@style/TextAppearance.AppCompat.Medium"
+                android:textColor = "@android:color/white"
+                android:textStyle = "bold" />
+            <View
+                android:layout_width = "72dp"
+                android:layout_height = "2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id = "@+id/tv_description"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-condensed"
+                android:textSize="12sp"
+                android:text = "Mention all the travellers travelling together including the vehicle driver."
+                android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+                android:textColor = "@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width = "120dp"
+            android:layout_height = "96dp"
+            android:src="@drawable/ic_team"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_traveller"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_passenger_container"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardElevation ="3dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/accent_brown">
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/et_traveller_name"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "45dp"
+                    android:hint="Full name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:background="@drawable/bg_round_rect_white" />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spin_traveller_type"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "45dp"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/bg_round_rect_white"
+                    android:layout_marginTop="8dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_id_proof"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "45dp"
+                    android:text="ID PROOF"
+                    android:drawableStart="@drawable/ic_cloud_upload"
+                    android:drawableTint="@android:color/darker_gray"
+                    android:drawablePadding="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:background="@drawable/bg_round_rect_white"
+                    android:layout_marginTop="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_save_traveller"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "45dp"
+                    android:text="SAVE"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/bg_add_btn"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_new_traveller"
+            android:layout_width = "match_parent"
+            android:layout_height = "45dp"
+            android:text="ADD NEW TRAVELLER"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_add_btn"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width = "match_parent"
+        android:layout_height = "1dp"
+        android:background="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "?android:actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_prev"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:drawableStart = "@drawable/ic_chevron_left"
+            android:drawableTint = "@android:color/darker_gray"
+            android:fontFamily = "sans-serif-condensed-light"
+            android:gravity = "center_vertical"
+            android:paddingStart = "16dp"
+            android:text = "PREV"
+            android:textAllCaps = "true"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+            android:textColor = "@android:color/darker_gray"
+            android:textSize = "10sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "2"
+            android:fontFamily = "sans-serif-black"
+            android:gravity = "center"
+            android:text = "3/6"
+            android:textAllCaps = "true"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+            android:textColor = "@android:color/black"
+            android:textSize = "12sp"
+            android:textStyle = "bold" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:drawableEnd = "@drawable/ic_chevron_right"
+            android:drawableTint = "@color/colorAccent"
+            android:fontFamily = "sans-serif-condensed-light"
+            android:gravity = "center_vertical|end"
+            android:paddingEnd = "16dp"
+            android:text = "Next"
+            android:textAllCaps = "true"
+            android:textAppearance = "@style/TextAppearance.AppCompat.Small"
+            android:textColor = "@color/colorAccent"
+            android:textSize = "10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
